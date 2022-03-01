@@ -11,21 +11,21 @@ background-color: red;
     width: 100px;
     height: 100px;
     background: red;
-    transition: width 3s;
+    transition: width;
 }
 .ex-2-square:active{
         width: 600px;
-        transition: background-color 2s ;
+        transition:3s ;
 }
 
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
-    transition: border radius 4s;
+    transition:3s;
 }
 .ex-3-square:hover{
-    border-radius: 50%;
+    border-radius: 100%;
 }
 .ex-4-square{
     width: 100px;
@@ -42,7 +42,7 @@ background-color: red;
     width: 60px;
     height: 60px;
     background: red;
-    transition: width height,3s
+    transition: width 3s height,3s
 }
 .ex-5-square:hover{
     width:150px;
@@ -70,17 +70,20 @@ background-color: red;
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter,3s;
 }
 .ex-9-img:hover{
     filter:contrast(200%) grayscale(100%);
     border-radius: 50%;
-    transition: filter,3s;
+    
     width: 200px;
 }
 .ex-10-icon {
     font-size: 60px;
-    animation: spin;
-    
+    animation: spin 3s infinite;  
+}
+@keyframes spin {
+    transform:rotate
 }
 .ex-11-icon {
     font-size: 60px;
